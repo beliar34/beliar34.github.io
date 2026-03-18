@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    nav a {
+      margin-right: 1rem;
+    }
+    h1 {
+      margin-bottom: 0.2rem;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <div class="subtitle">Short tagline or 1–2 sentence summary of who you are</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        A short paragraph about you: what you do professionally, what you’re interested in,
+        and maybe 1–2 hobbies or personal interests.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project A</strong> – One sentence description / link.</li>
+        <li><strong>Project B</strong> – One sentence description / link.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Best ways to reach you (e.g. email, LinkedIn, GitHub).
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/your-github-username">your-github-username</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle">your-handle</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
