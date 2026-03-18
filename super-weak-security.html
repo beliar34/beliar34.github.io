@@ -1,0 +1,36 @@
+---
+layout: page
+title: "Family area"
+permalink: /family/
+---
+
+<div id="password-form">
+  <p>This area is for family only. Please enter the password:</p>
+  <input type="password" id="pw-input" />
+  <button onclick="checkPassword()">Enter</button>
+  <p id="pw-error" style="color: red; display: none;">Wrong password.</p>
+</div>
+
+<div id="protected-content" style="display: none;">
+  <h2>Family photos</h2>
+  <p>Welcome!</p>
+  <ul>
+    <li><a href="/assets/family/photo1.jpg">Photo 1</a></li>
+    <li><a href="/assets/family/photo2.jpg">Photo 2</a></li>
+    <!-- more content -->
+  </ul>
+</div>
+
+<script>
+  const PASSWORD = "your-secret-here";  // choose a better password
+
+  function checkPassword() {
+    const input = document.getElementById("pw-input").value;
+    if (input === PASSWORD) {
+      document.getElementById("password-form").style.display = "none";
+      document.getElementById("protected-content").style.display = "block";
+    } else {
+      document.getElementById("pw-error").style.display = "block";
+    }
+  }
+</script>
